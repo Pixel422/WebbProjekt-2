@@ -122,8 +122,6 @@ header .scroller:hover
     box-shadow: 0 0 50px 5px #5A5A5A;
     transition: transform 0.2s, box-shadow 0.2s;
 }
-
-
 .categories
 {
     width: 100%;
