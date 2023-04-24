@@ -10,18 +10,20 @@ const scrollContainer = document.querySelector('.scrollContainer');
   });
 
   //Betygsättning
-  const stars = document.querySelectorAll('.star');
-
-stars.forEach((star, index) => {
-  star.addEventListener('mouseover', () => {
-    for (let i = 0; i < index; i++) {
-      stars[i].style.filter = 'invert(76%) sepia(23%) saturate(2144%) hue-rotate(0deg) brightness(105%) contrast(105%)';
-    }
-  });
-
-  star.addEventListener('mouseout', () => {
-    for (let i = 0; i < index; i++) {
-      stars[i].style.filter = '';
-    }
-  });
-});
+  const stars = document.getElementsByClassName('star');
+  const starList = Array.from(stars);
+  
+  for (let i = 0; i < starList.length; i++) {
+    starList[i].addEventListener('mouseover', () => {
+      for (let j = 0; j <= i; j++) {
+        starList[j].classList.add('red');
+      }
+    });
+  
+    starList[i].addEventListener('mouseout', () => {
+      for (let j = 0; j <= i; j++) {
+        starList[j].classList.remove('red');
+      }
+    });
+  }
+  
