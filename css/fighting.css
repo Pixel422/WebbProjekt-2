@@ -1,0 +1,259 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+:root
+{
+    --gradientFirst: #9A3232;
+    --gradientSecond: #3E517A;
+    --backcolor: #6e2525;
+    --bordercolor: #AFB3F7; 
+    --textcolor: #FFF9E5;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(180deg, var(--gradientFirst), var(--gradientSecond) 80%);
+}
+nav
+{
+    height: 100vh;
+    position: fixed;
+    width: 18%;
+    background-color: var(--backcolor);
+    border-right: 5px solid var(--bordercolor);
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+}
+nav *
+{
+    background-color: transparent;
+    color: var(--textcolor);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 39px;
+}
+nav img
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 80%;
+    background-color: transparent;
+}
+.links
+{
+    margin-top: 30%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.subLink
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.navDistance
+{
+    width: 8%;
+}
+.scrollContainer
+{
+    background-color: transparent;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    width: 82%;
+    height: 100vh;
+    margin-left: 18%;
+}
+.scrollContainer *
+{
+    background-color: transparent;
+}
+.scrollContainer::-webkit-scrollbar 
+{
+    display: none;
+}
+.scrollScreen
+{
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100%;
+}
+.topWrapper
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+.topWrapper h1
+{
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    line-height: 120px;
+    color: var(--textcolor);
+    text-shadow: 0 0 25px var(--backcolor);
+}
+.topWrapper .textbox
+{
+    width: 40%;
+    height: 250px;
+    background-color: var(--backcolor);
+    border: var(--bordercolor) solid 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 700ms, box-shadow 500ms;
+}
+.topWrapper .textbox:first-of-type
+{
+    margin-left: 10%;
+}
+.topWrapper .textbox:last-of-type
+{
+    margin-left: 50%;
+}
+.topWrapper .textbox:hover
+{
+    transition: transform 200ms, box-shadow 200ms;
+    transform: scale(1.1);
+    box-shadow: var(--bordercolor) 0 0 50px 5px;
+}
+.topWrapper .textbox p
+{
+    margin: 18px;
+    color: var(--textcolor);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.scroller
+{
+    width: 100px;
+    height: 100px;
+    background-color: var(--backcolor);
+    border: 5px solid var(--bordercolor);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.7s, box-shadow 0.7s;
+    align-self: center;
+}
+.scroller:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 0 50px 5px var(--bordercolor);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botWrapper
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.botWrapper .row
+{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.botWrapper .row .item
+{
+    width: 40%;
+}
+.botWrapper .row:nth-child(1) a
+{
+    background-image: url(../img/game4.png);
+}
+.botWrapper .row:nth-child(2) a
+{
+    background-image: url(../img/game5.png);
+}
+.botWrapper .row:nth-child(3) a
+{
+    background-image: url(../img/game6.png);
+}
+.botWrapper .row a
+{
+    background-position: center;
+    background-size: cover;
+    border: var(--bordercolor) solid 5px;
+    border-radius: 5px;
+    transition: transform 700ms, box-shadow 500ms;
+}
+.botWrapper .row a:hover
+{
+    transition: transform 200ms;
+    transform: scaleX(1.1);
+    box-shadow: var(--bordercolor) 0 0 50px 5px;
+}
+.botWrapper .row .textbox
+{
+    color: var(--textcolor);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.botWrapper .row .textbox p:first-child
+{
+    font-size: 36px;
+}
+.botWrapper .row:nth-child(1) .textbox p:first-child
+{
+    border-right: var(--bordercolor) solid 5px;
+    padding-right: 10px;
+}
+.botWrapper .row:nth-child(2) .textbox p:first-child
+{
+    border-left: var(--bordercolor) solid 5px;
+    padding-left: 10px;
+}
+.botWrapper .row:nth-child(3) .textbox p:first-child
+{
+    border-right: var(--bordercolor) solid 5px;
+    padding-right: 10px;
+}
+.botWrapper .row:nth-child(1) .textbox p:last-child
+{
+    border-left: var(--bordercolor) solid 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.botWrapper .row:nth-child(2) .textbox p:last-child
+{
+    border-right: var(--bordercolor) solid 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.botWrapper .row:nth-child(3) .textbox p:last-child
+{
+    border-left: var(--bordercolor) solid 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
