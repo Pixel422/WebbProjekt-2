@@ -1,3 +1,4 @@
+
 //Knappen för att scrolla ner
 const scrollContainer = document.querySelector('.scrollContainer');
   const scroller = document.querySelector('.scroller');
@@ -8,3 +9,4 @@ const scrollContainer = document.querySelector('.scrollContainer');
       behavior: 'smooth'});
 
   });
+  

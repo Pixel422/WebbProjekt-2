@@ -1,4 +1,5 @@
-  //Betygsättning
+  
+  //JavaScript för att lämna en recension
   const stars = document.getElementsByClassName('star');
   const starList = Array.from(stars);
   

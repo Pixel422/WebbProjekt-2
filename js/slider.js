@@ -1,3 +1,6 @@
+
+//JavaScript för en slider. Inkluderar auto-scroll och knappar för att scrolla tillbaka och framåt.
+
 const slider = document.getElementsByClassName('slider')[0];
   const prevButton = document.getElementsByClassName('prev-button')[0];
   const nextButton = document.getElementsByClassName('next-button')[0];

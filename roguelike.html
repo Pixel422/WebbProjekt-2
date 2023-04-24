@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="css/roguelike.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <!--Loggan in nav:en-->
+        <!--Loggan i nav:en-->
         <img src="img/logoSidebar.svg" alt="">
 
         <!--Im sorry Magnus-->
@@ -117,37 +116,46 @@
             </div>
         </div>
     </nav>
+    
     <!--En egen div till resten av sidan-->
     <div class="scrollContainer" id="hideScrollbar">
+        
         <!--Första sidan = en simpel informationssida med en knapp som scrollar ner-->
         <div class="scrollScreen">
             <section class="topWrapper">
                 <h1>Roguelike</h1>
-                <div class="textbox"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia saepe dolores voluptatibus voluptates amet qui quos, laudantium sequi rem, fuga dolorem a incidunt eligendi vel minus, maxime explicabo consequuntur dicta!</p></div>
-                <div class="textbox"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, sit provident, cumque blanditiis quo atque expedita, voluptate nesciunt odio ab quisquam earum odit rerum. Ipsam corporis officia recusandae nesciunt quaerat?</p></div>
+                <div class="textbox"><p>Roguelikes are a type of game that usually takes place in a dungeon-like structure where you collect powerups and defeat enemies.</p></div>
+                <div class="textbox"><p>If you like games with a lot of different approaches to them you may like this genre with it’s broad collection of weapons and magic each with it’s own unique play style</p></div>
+                
+                <!--Knappen som scrollar-->
                 <button class="scroller">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFCC00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
                 </button>
             </section>
         </div>
+        
         <!--Andra sidan = en lista med länkar till de olika spelen-->
         <div class="scrollScreen">
+
+            <!--En div-struktur som radar upp bilder och text-->
             <section class="botWrapper">
                 <div class="row">
                     <a href="20min.html" class="item"></a>
-                    <div class="textbox item"><p>20 Minutes Till Dawn</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, asperiores! Exercitationem, blanditiis. Cumque doloremque fugit sapiente error, expedita temporibus perspiciatis, quod illum, maxime totam enim iusto nihil rerum quo labore.</p></div>
+                    <div class="textbox item"><p>20 Minutes Till Dawn</p><p>Survive an onslaught of monsters by choosing a combination of character and weapon all while leveling up and claiming powerups to make yourself stronger.</p></div>
                 </div>
                 <div class="row">
-                    <div class="textbox item"><p>Enter the Gungeon</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolore voluptas cumque, quibusdam cum ducimus ullam voluptatum facere, aspernatur impedit fugiat et animi minus saepe vel sunt porro corporis atque?</p></div>
+                    <div class="textbox item"><p>Enter the Gungeon</p><p>What? Defeat enemies. <br>Where? The Gungeon. <br>Why? Not important. <br>How? With GUNS!</p></div>
                     <a href="gungeon.html" class="item"></a>
                 </div>
                 <div class="row">
                     <a href="wizard.html" class="item"></a>
-                    <div class="textbox item"><p>Wizard of Legend</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime dolores fuga commodi eum repellendus dolorum qui, voluptatibus officiis. Rerum eum voluptatum aperiam rem, neque nisi? Nisi exercitationem unde recusandae.</p></div>
+                    <div class="textbox item"><p>Wizard of Legend</p><p>You are a wizard who are about to take an exam to acquire a Token of Legend as proof that you are one of the world’s strongest magicians.</p></div>
                 </div>
             </section>
         </div>
     </div>
+    
+    <!--Länkar JavaScripten-->
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/20min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
+        <!--Loggan i nav:en-->
         <img src="img/logoSidebar.svg" alt="">
 
         <!--Im sorry Magnus-->
@@ -116,9 +116,14 @@
             </div>
         </div>
     </nav>
+
+    <!--En div till resten av sidan-->
     <div class="scrollContainer" id="hideScrollbar">
+
+        <!--Första sidan = En slider med bilder av/från spelet-->
         <div class="scrollScreen">
             
+            <!--Själva slidern-->
             <div class="slider">
                 <img src="img/game1.png" alt="Image 1">
                 <img src="img/game2.png" alt="Image 2">
@@ -128,22 +133,30 @@
                 <button class="slider-button prev-button">&#8249;</button>
                 <button class="slider-button next-button">&#8250;</button>
               </div>
+
+              <!--Titeln av spelet på toppen av sidan-->
               <div class="title">
                 <h1>20 Minutes Till Dawn</h1>
               </div>
         </div>
+
+        <!--Andra sidan = En kort sammanfattning av spelet och en kort recension från mig. Man kan också lämna sin egen recension i form av stjärnor-->
         <div class="scrollScreen">
+
+            <!--Sammanfattning av spelet-->
             <section class="summarySection">
                 <div class="summary">
                     <h1 class="head1">Summary</h1>
                     <p>20 Minutes Till Dawn is a roguelike game where you play as a group of survivors trying to escape a zombie apocalypse. The game is a top-down shooter where you have to survive as long as possible. The game is very fast-paced and you have to be quick on your feet to survive. The game is very fun and it is a great game to play with friends. The game is very easy to learn and it is a great game to play if you want to play a game with your friends.</p>
                 </div>
-                <div class="summaryRose">
+                <div class="summaryRose rose">
                     <img src="img/20min/rose.png" alt="">
                 </div>
             </section>
+
+            <!--Recension av spelet-->
             <section class="reviewSection">
-                <div class="reviewRose">
+                <div class="reviewRose rose">
                     <img src="img/20min/rose.png" alt="">
                 </div>
                 <div class="review">
@@ -151,6 +164,8 @@
                         <h1 class="head1">Review</h1>
                         <p>20 Minutes Till Dawn is a roguelike game where you play as a group of survivors trying to escape a zombie apocalypse. The game is a top-down shooter where you have to survive as long as possible. The game is very fast-paced and you have to be quick on your feet to survive. The game is very fun and it is a great game to play with friends. The game is very easy to learn and it is a great game to play if you want to play a game with your friends.</p>
                     </div>
+
+                    <!--Stjärnor för att kunna lämna en recension-->
                     <div class="stars">
                         <img class="star" src="img/star.webp" alt="">
                         <img class="star" src="img/star.webp" alt="">
@@ -162,6 +177,8 @@
             </section>
         </div>
     </div>
+
+    <!--Länkar till JavaScripten-->
     <script src="js/rating.js"></script>
     <script src="js/slider.js"></script>
 </body>
