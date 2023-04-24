@@ -111,22 +111,47 @@ nav img
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: blue;
-    border: none;
-    font-size: 24px;
+    background: #272030;
+    border: #FE5161 5px solid;
+    font-size: 60px;
+    text-align: center;
     cursor: pointer;
     z-index: 2;
-    width: 50px;
+    width: 75px;
     border-radius: 50%;
     aspect-ratio: 1/1;
+    color: #FFF9E5;
+    transition: 700ms ease-in-out;
+}
+.slider-button:hover
+{
+    transition: 200ms ease-in;
+    scale: 1.1;
+    background-color: #FE5161;
+    color: #272030;
 }
 .prev-button 
 {
-    left: 10px;
+    left: 48px;
 }
 .next-button 
 {
-    right: 10px;
+    right: 48px;
+}
+.title
+{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #272030;
+    border-bottom: #FE5161 5px solid;
+    border-right: #FE5161 5px solid;
+    border-bottom-right-radius: 5px;
+    color: #FFF9E5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 .summarySection
 {
