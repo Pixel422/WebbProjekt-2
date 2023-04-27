@@ -6,10 +6,10 @@
 }
 :root
 {
-    --gradientFirst: #9A3232;
-    --gradientSecond: #3E517A;
-    --backcolor: #6e2525;
-    --bordercolor: #AFB3F7; 
+    --gradientFirst: #214e35;
+    --gradientSecond: #FAFAC6;
+    --backcolor: #2D3047;
+    --bordercolor: #A7CCED; 
     --textcolor: #FFF9E5;
 }
 body
