@@ -5,10 +5,10 @@
 }
 :root
 {
-    --background1: #141C27;
-    --background2: #798489;
-    --backcolor: #303134;
-    --bordercolor: #9E3A29; 
+    --background1: #fff0c1;
+    --background2: #8b8b8b;
+    --backcolor: #464C53;
+    --bordercolor: #D3BB86; 
     --textcolor: #FFF9E5;
 }
 body
@@ -17,7 +17,7 @@ body
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(90deg, var(--background2), var(--background1) 80%);
+    background: linear-gradient(90deg, var(--background2), var(--background1) 100%);
 }
 nav
 {
@@ -182,7 +182,7 @@ nav img
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--textcolor);
+    color: var(--backcolor);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     
@@ -207,7 +207,6 @@ nav img
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: var(--background);
 }
 .reviewRose
 {
@@ -224,7 +223,7 @@ nav img
     height: 100%;
     display: flex;
     flex-direction: column;
-    color: var(--textcolor);
+    color: var(--backcolor);
     justify-content: space-evenly;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
