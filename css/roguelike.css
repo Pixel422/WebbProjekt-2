@@ -54,6 +54,11 @@ nav img
     display: flex;
     flex-direction: row;
 }
+.navLink
+{
+    overflow: hidden;
+    white-space: nowrap;
+}
 .navDistance
 {
     width: 8%;

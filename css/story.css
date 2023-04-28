@@ -6,10 +6,10 @@
 }
 :root
 {
-    --gradientFirst: #44633F;
-    --gradientSecond: #BCB88A;
-    --backcolor: #3E517A;
-    --bordercolor: #BBBDF6; 
+    --gradientFirst: #DAA520;
+    --gradientSecond: #fff0cb;
+    --backcolor: #2F195F;
+    --bordercolor: #B7A1CF; 
     --textcolor: #FFF9E5;
 }
 body
@@ -187,15 +187,15 @@ nav img
 }
 .botWrapper .row:nth-child(1) a
 {
-    background-image: url(../img/game7.png);
+    background-image: url(../img/game13.png);
 }
 .botWrapper .row:nth-child(2) a
 {
-    background-image: url(../img/game8.png);
+    background-image: url(../img/game14.png);
 }
 .botWrapper .row:nth-child(3) a
 {
-    background-image: url(../img/game9.png);
+    background-image: url(../img/game15.png);
 }
 .botWrapper .row a
 {

@@ -5,9 +5,10 @@
 }
 :root
 {
-    --background: #F4F1DE;
-    --backcolor: #272030;
-    --bordercolor: #FE5161; 
+    --background1: #fff0c1;
+    --background2: #8b8b8b;
+    --backcolor: #464C53;
+    --bordercolor: #D3BB86; 
     --textcolor: #FFF9E5;
 }
 body
@@ -16,7 +17,7 @@ body
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background-color: var(--background);
+    background: linear-gradient(90deg, var(--background2), var(--background1) 100%);
 }
 nav
 {
@@ -96,7 +97,7 @@ nav img
 .slider 
 {
     display: flex;
-    overflow-x: scroll;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -123,7 +124,7 @@ nav img
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: #272030;
+    background: var(--backcolor);
     border: var(--bordercolor) 5px solid;
     font-size: 60px;
     text-align: center;
@@ -206,7 +207,6 @@ nav img
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: var(--background);
 }
 .reviewRose
 {

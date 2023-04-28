@@ -9,4 +9,3 @@ const scrollContainer = document.querySelector('.scrollContainer');
       behavior: 'smooth'});
 
   });
-  

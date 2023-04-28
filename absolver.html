@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamevaluator</title>
     <link rel="icon" href="img/logo.svg">
-    <link rel="stylesheet" href="css/fighting.css">
+    <link rel="stylesheet" href="css/absolver.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -117,47 +117,71 @@
             </div>
         </div>
     </nav>
-    
-    <!--En egen div till resten av sidan-->
+
+    <!--En div till resten av sidan-->
     <div class="scrollContainer" id="hideScrollbar">
-        
-        <!--Första sidan = en simpel informationssida med en knapp som scrollar ner-->
+
+        <!--Första sidan = En slider med bilder av/från spelet-->
         <div class="scrollScreen">
-            <section class="topWrapper">
-                <h1>Fighting</h1>
-                <div class="textbox"><p></p></div>
-                <div class="textbox"><p></p></div>
-                
-                <!--Knappen som scrollar-->
-                <button class="scroller">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--bordercolor)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
-                </button>
-            </section>
+            
+            <!--Själva slidern-->
+            <div class="slider">
+                <img src="img/game1.png" alt="Image 1">
+                <img src="img/game2.png" alt="Image 2">
+                <img src="img/game3.png" alt="Image 3">
+              </div>
+              <div class="slider-nav">
+                <button class="slider-button prev-button">&#8249;</button>
+                <button class="slider-button next-button">&#8250;</button>
+              </div>
+
+              <!--Titeln av spelet på toppen av sidan-->
+              <div class="title">
+                <h1>20 Minutes Till Dawn</h1>
+              </div>
         </div>
-        
-        <!--Andra sidan = en lista med länkar till de olika spelen-->
+
+        <!--Andra sidan = En kort sammanfattning av spelet och en kort recension från mig. Man kan också lämna sin egen recension i form av stjärnor-->
         <div class="scrollScreen">
 
-            <!--En div-struktur som radar upp bilder och text-->
-            <section class="botWrapper">
-                <div class="row">
-                    <a href="absolver.html" class="item"></a>
-                    <div class="textbox item"><p>Absolver</p><p>Survive an onslaught of monsters by choosing a combination of character and weapon all while leveling up and claiming powerups to make yourself stronger.</p></div>
+            <!--Sammanfattning av spelet-->
+            <section class="summarySection">
+                <div class="summary">
+                    <h1 class="head1">Summary</h1>
+                    <p>20 Minutes Till Dawn is a roguelike game where you play as a group of survivors trying to escape a zombie apocalypse. The game is a top-down shooter where you have to survive as long as possible. The game is very fast-paced and you have to be quick on your feet to survive. The game is very fun and it is a great game to play with friends. The game is very easy to learn and it is a great game to play if you want to play a game with your friends.</p>
                 </div>
-                <div class="row">
-                    <div class="textbox item"><p>For Honor</p><p>What? Defeat enemies. <br>Where? The Gungeon. <br>Why? Not important. <br>How? With GUNS!</p></div>
-                    <a href="forhonor.html" class="item"></a>
+                <div class="summaryRose rose">
+                    <img src="img/20min/rose.png" alt="">
                 </div>
-                <div class="row">
-                    <a href="sifu.html" class="item"></a>
-                    <div class="textbox item"><p>Sifu</p><p>You are a wizard who are about to take an exam to acquire a Token of Legend as proof that you are one of the world’s strongest magicians.</p></div>
+            </section>
+
+            <!--Recension av spelet-->
+            <section class="reviewSection">
+                <div class="reviewRose rose">
+                    <img src="img/20min/rose.png" alt="">
+                </div>
+                <div class="review">
+                    <div class="reviewText">
+                        <h1 class="head1">Review</h1>
+                        <p>20 Minutes Till Dawn is a roguelike game where you play as a group of survivors trying to escape a zombie apocalypse. The game is a top-down shooter where you have to survive as long as possible. The game is very fast-paced and you have to be quick on your feet to survive. The game is very fun and it is a great game to play with friends. The game is very easy to learn and it is a great game to play if you want to play a game with your friends.</p>
+                    </div>
+
+                    <!--Stjärnor för att kunna lämna en recension-->
+                    <div class="stars">
+                        <img class="star" src="img/star.webp" alt="">
+                        <img class="star" src="img/star.webp" alt="">
+                        <img class="star" src="img/star.webp" alt="">
+                        <img class="star" src="img/star.webp" alt="">
+                        <img class="star" src="img/star.webp" alt="">
+                    </div> 
                 </div>
             </section>
         </div>
     </div>
-    
-    <!--Länkar JavaScripten-->
+
+    <!--Länkar till JavaScripten-->
     <script src="js/naveffect.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
