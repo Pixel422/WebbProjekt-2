@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamevaluator</title>
+    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="css/moba.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <!--Loggan i nav:en-->
+        <img src="img/logoSidebar.svg" alt="">
+
+        <!--Im sorry Magnus-->
+        <div class="links">
+            <a class="navLink" href="index.html" data-value="Home">Home</a>
+            <div class="subLink">
+                <!--Avstånd för att skilja genre från spel-->
+                <div class="navDistance"></div>
+                <a class="navLink" href="roguelike.html" data-value="Roguelike">Roguelike</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="20min.html" data-value="20 Minutes Till Dawn">20 Minutes Till Dawn</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="gungeon.html" data-value="Enter the Gungeon">Enter the Gungeon</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="wizard.html" data-value="Wizard of Legend">Wizard of Legend</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <a class="navLink" href="fighting.html" data-value="Fighting">Fighting</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="absolver.html" data-value="Absolver">Absolver</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="forhonor.html" data-value="For Honor">For Honor</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="sifu.html" data-value="Sifu">Sifu</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <a class="navLink" href="fps.html" data-value="First Person Shooter">First Person Shooter</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="csgo.html" data-value="CS: GO">CS: GO</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="valorant.html" data-value="Valorant">Valorant</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="splitgate.html" data-value="Splitgate">Splitgate</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <a class="navLink" href="moba.html" data-value="MOBA">MOBA</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="lol.html" data-value="League of Legends">League of Legends</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="battlerite.html" data-value="Battlerite">Battlerite</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="omegastrikers.html" data-value="Omega Strikers">Omega Strikers</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <a class="navLink" href="story.html" data-value="Story">Story</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="ghostrunner.html" data-value="Ghostrunner">Ghostrunner</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="gris.html" data-value="GRIS">GRIS</a>
+            </div>
+            <div class="subLink">
+                <div class="navDistance"></div>
+                <div class="navDistance"></div>
+                <a class="navLink" href="ashorthike.html" data-value="A Short Hike">A Short Hike</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!--En egen div till resten av sidan-->
+    <div class="scrollContainer" id="hideScrollbar">
+        
+        <!--Första sidan = en simpel informationssida med en knapp som scrollar ner-->
+        <div class="scrollScreen">
+            <section class="topWrapper">
+                <h1>MOBA</h1>
+                <div class="textbox"><p></p></div>
+                <div class="textbox"><p></p></div>
+                
+                <!--Knappen som scrollar-->
+                <button class="scroller">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--bordercolor)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                </button>
+            </section>
+        </div>
+        
+        <!--Andra sidan = en lista med länkar till de olika spelen-->
+        <div class="scrollScreen">
+
+            <!--En div-struktur som radar upp bilder och text-->
+            <section class="botWrapper">
+                <div class="row">
+                    <a href="lol.html" class="item"></a>
+                    <div class="textbox item"><p>Absolver</p><p>Survive an onslaught of monsters by choosing a combination of character and weapon all while leveling up and claiming powerups to make yourself stronger.</p></div>
+                </div>
+                <div class="row">
+                    <div class="textbox item"><p>For Honor</p><p>What? Defeat enemies. <br>Where? The Gungeon. <br>Why? Not important. <br>How? With GUNS!</p></div>
+                    <a href="battlerite.html" class="item"></a>
+                </div>
+                <div class="row">
+                    <a href="omegastrikers.html" class="item"></a>
+                    <div class="textbox item"><p>Sifu</p><p>You are a wizard who are about to take an exam to acquire a Token of Legend as proof that you are one of the world’s strongest magicians.</p></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!--Länkar JavaScripten-->
+    <script src="js/naveffect.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

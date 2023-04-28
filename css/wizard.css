@@ -5,9 +5,10 @@
 }
 :root
 {
-    --background: #F4F1DE;
-    --backcolor: #272030;
-    --bordercolor: #FE5161; 
+    --background1: #FF5F6D;
+    --background2: #ffb752;
+    --backcolor: #3C474B;
+    --bordercolor: #c31432; 
     --textcolor: #FFF9E5;
 }
 body
@@ -16,7 +17,7 @@ body
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background-color: var(--background);
+    background: linear-gradient(90deg, var(--background2), var(--background1) 80%);
 }
 nav
 {
@@ -96,7 +97,7 @@ nav img
 .slider 
 {
     display: flex;
-    overflow-x: scroll;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -123,7 +124,7 @@ nav img
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: #272030;
+    background: var(--backcolor);
     border: var(--bordercolor) 5px solid;
     font-size: 60px;
     text-align: center;
@@ -181,7 +182,7 @@ nav img
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--backcolor);
+    color: var(--textcolor);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     
@@ -223,7 +224,7 @@ nav img
     height: 100%;
     display: flex;
     flex-direction: column;
-    color: var(--backcolor);
+    color: var(--textcolor);
     justify-content: space-evenly;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
