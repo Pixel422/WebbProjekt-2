@@ -5,10 +5,11 @@
 }
 :root
 {
-    --background1: #837128;
-    --background2: #228cc5;
-    --backcolor: #413A27;
-    --bordercolor: #CCBA7C; 
+    --background1: #BFAA41;
+    --background2: #BCBF3C;
+    --background3: #4B5936;
+    --backcolor: #583144;
+    --bordercolor: #F2685B; 
     
     --textcolor: #FFF9E5;
 }
@@ -18,7 +19,7 @@ body
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(90deg, var(--background2) 20%, var(--background1) 80%);
+    background: linear-gradient(45deg, var(--background1) 20%, var(--background2) 60%, var(--background3) 100%);
 }
 nav
 {
@@ -183,7 +184,7 @@ nav img
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--textcolor);
+    color: var(--backcolor);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     
@@ -224,7 +225,7 @@ nav img
     height: 100%;
     display: flex;
     flex-direction: column;
-    color: var(--textcolor);
+    color: var(--backcolor);
     justify-content: space-evenly;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -233,7 +234,7 @@ nav img
 {
     font-size:48px;
     line-height: 78px;
-    text-decoration: underline var(--backcolor) 5px;
+    text-decoration: underline var(--bordercolor) 5px;
 }
 .stars
 {
